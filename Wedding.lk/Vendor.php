@@ -1,5 +1,5 @@
 <?php
-	include 'dbconnection.php';
+	require_once('Reference/includes/dbconnection.php');
 ?>
 <!DOCTYPE html>
 <html>
@@ -230,3 +230,6 @@
 
 </body>
 </html>
+<?php 
+	mysqli_close($connection);
+?>

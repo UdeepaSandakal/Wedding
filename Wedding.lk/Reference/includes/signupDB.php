@@ -1,6 +1,6 @@
 <?php
 	session_start();
-	//include("dbconnection.php");
+	require_once('dbconnection.php');
 
 	/*if(isset($_POST["name"])&&isset($_POST["email"])&&isset($_POST["mobile"])&&isset($_POST["password"])&&isset($_POST["confirmPassword"])){
 			if($_POST["password"]==$_POST["confirmPassword"])
@@ -19,7 +19,7 @@
 				echo "Not updated";
 			}
 	}*/
-
+/*
 	$name="";
 	$email="";
 	$mobile="";
@@ -70,5 +70,34 @@
   	header('location: ../login.php');
   }
 }
+*/
+	/*
+		INSERT INTO table_name(
+			column1, column2, etc
+		)VALUES(
+			value1,value2,etc
+		)
+	*/
+		$name='udeepa';
+		$email='abc@gmail.com';
+		$mobile='07458xxxxx';
+		$password='test123';
+		$role='admin';
 
+		$hashed_password=sha1($password);
+		//echo "Hashed password: {$hashed_password}";
+
+		$query="INSERT INTO register(name,email,mobile,password,role) VALUES ('{$name}','{$email}','{$mobile}','{$hashed_password}','{$role}')";
+
+		$result=mysqli_query($connection,$query);
+
+		if($result){
+			echo "1 Record added";
+		}else{
+			echo "Database query failed";
+		}
+
+	mysqli_close($connection);
 ?>
+ 
+	

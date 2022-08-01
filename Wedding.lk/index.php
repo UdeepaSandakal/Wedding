@@ -1,8 +1,5 @@
 <?php
-// Start the session
-session_start();
-error_reporting(0);
-include('includes/dbconnection.php');
+	require_once('Reference/includes/dbconnection.php');
 ?>
 
 <!DOCTYPE html>
@@ -395,3 +392,6 @@ include('includes/dbconnection.php');
 
 </body>
 </html>
+<?php 
+	mysqli_close($connection);
+?>

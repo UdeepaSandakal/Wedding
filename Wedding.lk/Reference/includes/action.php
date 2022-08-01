@@ -1,5 +1,5 @@
 <?php
-	require 'dbconnection.php';
+	require_once('dbconnection.php');
 
 	if(isset($_POST['action'])){
 		$sql="SELECT * FROM vendor WHERE catergory!=''";
@@ -40,4 +40,5 @@
 		echo $output;
 	}
 
+	mysqli_close($connection);
 ?>

@@ -1,3 +1,6 @@
+<?php
+	require_once('Reference/includes/dbconnection.php');
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -245,3 +248,6 @@
 
 </body>
 </html>
+<?php 
+	mysqli_close($connection);
+?>
