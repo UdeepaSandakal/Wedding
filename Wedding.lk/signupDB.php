@@ -5,8 +5,8 @@
 		$email='abc@gmail.com';
 		$mobile='07458xxxxx';
 		$password='test123';
-		$role='admin';*/
-
+		$role='admin';
+		*/
 		if(isset($_POST['submit'])){
 			if(isset($_POST['name'])&&isset($_POST['email'])&&isset($_POST['mobile'])&&isset($_POST['password'])&&isset($_POST['confirmPassword'])){
 			if($_POST["password"]==$_POST["confirmPassword"]){
@@ -24,12 +24,16 @@
 					$result=mysqli_query($connection,$query);
 
 					if($result){
-						echo "1 Record added";
+						//echo "<script>alert('Record added successfull')</script>";
 						$location="login.php";
 						header("Location:$location");
 					}else{
 						echo "Database query failed";
 					}
+				}else{
+					$location="signup.php";
+						header("Location:$location");
+					//echo "<script>alert('Password not matched')</script>";
 				}
 			}
 		}

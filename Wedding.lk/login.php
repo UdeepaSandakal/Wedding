@@ -171,7 +171,7 @@
             <h1>Login</h1>
         </div>
         <div class="inputs">
-        <form action="loginDB" method="post" name="login">
+        <form action="loginDB.php" method="post" name="login">
             <div class="input">
                 <input type="text" name="email" id="email" required/>
                 <label for="email">
