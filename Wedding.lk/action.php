@@ -13,7 +13,7 @@
 			$sql .="AND city IN('".$city."')";
 		}
 
-		$result=$conn->query($sql);
+		$result=$connection->query($sql);
 		$output='';
 
 		if($result->num_rows>0){

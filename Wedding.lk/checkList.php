@@ -80,7 +80,8 @@
 		<!--/navigation bar-->
 	</div>
 	<!--/slider-->
-
+	<!--content-->
+	<p>Still not created</p>
 	
 	<!--.Footer-->
 	<footer class="section footer-classic context-dark bg-image" style="background: black;">

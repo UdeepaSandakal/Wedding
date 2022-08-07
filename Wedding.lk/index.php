@@ -234,7 +234,7 @@
 	<div class="content2">
 		<h3>Top Wedding Locations</h3>
 		<p>Find your dream location from Sri Lanka</p>
-		<a href="locations.php" class="stretched-link">More</a>
+		<!--<a href="locations.php" class="stretched-link">More</a>-->
 		<!-- Gallery -->
 		<div class="row">
 		  <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">

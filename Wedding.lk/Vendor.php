@@ -81,6 +81,7 @@
 	</div>
 	<!--/slider-->
 	<!--content-->
+	
 	<h3 class="text-center p-2">Vendors</h3>
 	<div class="container-fluid">
 		<div class="row">
@@ -91,7 +92,7 @@
 				<ul class="list-group">
 					<?php
 						$sql="SELECT DISTINCT catergory FROM vendor ORDER BY catergory";
-						$result=$conn->query($sql);
+						$result=$connection->query($sql);
 						while($row=$result->fetch_assoc()){
 					?>
 					<li class="list-group-item">
@@ -107,7 +108,7 @@
 				<ul class="list-group">
 					<?php
 						$sql="SELECT DISTINCT city FROM vendor ORDER BY city";
-						$result=$conn->query($sql);
+						$result=$connection->query($sql);
 						while($row=$result->fetch_assoc()){
 					?>
 					<li class="list-group-item">
@@ -129,7 +130,7 @@
 				<div class="row" id="result">
 					<?php
 					$sql="SELECT * FROM vendor";
-					$result=$conn->query($sql);
+					$result=$connection->query($sql);
 					while($row=$result->fetch_assoc()){
 					?>
 				<div class="col-md-3 mb-2">
