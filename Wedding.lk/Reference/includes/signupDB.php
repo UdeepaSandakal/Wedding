@@ -78,13 +78,25 @@
 			value1,value2,etc
 		)
 	*/
-		$name='udeepa';
+		/*$name='udeepa';
 		$email='abc@gmail.com';
 		$mobile='07458xxxxx';
 		$password='test123';
-		$role='admin';
+		$role='admin';*/
 
-		$hashed_password=sha1($password);
+		/*$name='';
+		$email='';
+		$mobile='';
+		$password='';
+		$role='';*/
+
+		if(isset($_POST["name"])&&isset($_POST["email"])&&isset($_POST["mobile"])&&isset($_POST["password"])&&isset($_POST["confirmPassword"])){
+			if($_POST["password"]==$_POST["confirmPassword"])
+			$name=$_POST["name"];
+			$email=$_POST["email"];
+			$mobile=$_POST["mobile"];
+
+			$hashed_password=sha1($password);
 		//echo "Hashed password: {$hashed_password}";
 
 		$query="INSERT INTO register(name,email,mobile,password,role) VALUES ('{$name}','{$email}','{$mobile}','{$hashed_password}','{$role}')";
@@ -96,7 +108,6 @@
 		}else{
 			echo "Database query failed";
 		}
-
 	mysqli_close($connection);
 ?>
  
