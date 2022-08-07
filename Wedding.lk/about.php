@@ -1,5 +1,5 @@
 <?php
-	require_once('Reference/includes/dbconnection.php');
+	require_once('dbconnection.php');
 ?>
 <!DOCTYPE html>
 <html>

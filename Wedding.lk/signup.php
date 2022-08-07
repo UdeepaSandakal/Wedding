@@ -1,5 +1,5 @@
 <?php
-	require_once('Reference/includes/dbconnection.php');
+	require_once('dbconnection.php');
 ?>
 <!DOCTYPE html>
 <html>
@@ -171,7 +171,7 @@
             <h1>Register</h1>
         </div>
         <div class="inputs">
-        <form action="Reference/includes/signupDB.php" method="POST" >
+        <form action="signupDB.php" method="POST" >
        
         	<div class="input">
                 <input type="text" name="name" id="name" required/>
@@ -203,9 +203,10 @@
                     Confirm Password
                 </label>
             </div>
+            <button type="submit" name="submit">Register</button>
         </form>
         </div>
-        <button type="submit" name="reg_user">Register</button>
+        
      
         <p class="join-link">Already have an account <a href="login.php">Login</a></p>
     </div>

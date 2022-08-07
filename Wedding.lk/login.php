@@ -1,5 +1,5 @@
 <?php
-	require_once('Reference/includes/dbconnection.php');
+	require_once('dbconnection.php');
 ?>
 <!DOCTYPE html>
 <html>
@@ -171,7 +171,7 @@
             <h1>Login</h1>
         </div>
         <div class="inputs">
-        <form action="#" method="post" name="login">
+        <form action="loginDB" method="post" name="login">
             <div class="input">
                 <input type="text" name="email" id="email" required/>
                 <label for="email">
@@ -186,7 +186,7 @@
             </div>
         </div>
         <a href="forgot-password.php" class="forgot-pass-link">Forgot password?</a>
-        <button>Log in</button>
+        <button type="submit" name="submit">Login</button>
         <p class="join-link">Not a member? <a href="signup.php">Register now</a></p>
     </form>
     </div>
