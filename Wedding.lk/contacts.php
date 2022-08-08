@@ -248,21 +248,21 @@
 	    <div class="form">
 	      <h4>GET IN TOUCH</h4>
 	      <h2 class="form-headline">Send us a message</h2>
-	      <form id="submit-form" action="">
+	       <form action="contactsDB.php" method="POST" >
 	        <p>
-	          <input id="name" class="form-input" type="text" placeholder="Your Name*">
+	          <input id="name" name="name" class="form-input" type="text" placeholder="Your Name*">
 	          <small class="name-error"></small>
 	        </p>
 	        <p>
-	          <input id="email" class="form-input" type="email" placeholder="Your Email*">
+	          <input id="email" name="email" class="form-input" type="email" placeholder="Your Email*">
 	          <small class="name-error"></small>
 	        </p>
 	        <p class="full-width">
-	          <textarea  minlength="20" id="message" cols="30" rows="7" placeholder="Your Message*" required></textarea>
+	          <textarea  minlength="20" name="message" id="message" cols="30" rows="7" placeholder="Your Message*" required></textarea>
 	          <small></small>
 	        </p>
 	        <p class="full-width">
-	          <input type="submit" class="submit-btn" value="Submit" onclick="checkValidations()">
+	          <input type="submit" class="submit-btn" value="Submit" onclick="checkValidations()" name="submit">
 	          <button class="reset-btn" onclick="reset()">Reset</button>
 	        </p>
 	      </form>
